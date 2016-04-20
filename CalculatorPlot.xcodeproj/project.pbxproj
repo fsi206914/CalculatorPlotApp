@@ -9,19 +9,25 @@
 /* Begin PBXBuildFile section */
 		8FE986E61CC7343C00D68339 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FE986E51CC7343C00D68339 /* AppDelegate.swift */; };
 		8FE986E81CC7343C00D68339 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FE986E71CC7343C00D68339 /* ViewController.swift */; };
-		8FE986EB1CC7343C00D68339 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8FE986E91CC7343C00D68339 /* Main.storyboard */; };
 		8FE986ED1CC7343C00D68339 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8FE986EC1CC7343C00D68339 /* Assets.xcassets */; };
 		8FE986F01CC7343C00D68339 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8FE986EE1CC7343C00D68339 /* LaunchScreen.storyboard */; };
+		8FE986FC1CC734B100D68339 /* CalculatorBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FE986FB1CC734B100D68339 /* CalculatorBrain.swift */; };
+		8FE986FF1CC7350C00D68339 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8FE986FD1CC7350C00D68339 /* Main.storyboard */; };
+		8FE987021CC7360600D68339 /* PlotViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FE987001CC7360600D68339 /* PlotViewController.swift */; };
+		8FE987031CC7360600D68339 /* LineChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FE987011CC7360600D68339 /* LineChart.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		8FE986E21CC7343C00D68339 /* CalculatorPlot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CalculatorPlot.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FE986E51CC7343C00D68339 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8FE986E71CC7343C00D68339 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		8FE986EA1CC7343C00D68339 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8FE986EC1CC7343C00D68339 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8FE986EF1CC7343C00D68339 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8FE986F11CC7343C00D68339 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8FE986FB1CC734B100D68339 /* CalculatorBrain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalculatorBrain.swift; sourceTree = "<group>"; };
+		8FE986FE1CC7350C00D68339 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = ../../../Calculator/StanfordCalculator/Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8FE987001CC7360600D68339 /* PlotViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlotViewController.swift; sourceTree = "<group>"; };
+		8FE987011CC7360600D68339 /* LineChart.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LineChart.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,11 +60,14 @@
 		8FE986E41CC7343C00D68339 /* CalculatorPlot */ = {
 			isa = PBXGroup;
 			children = (
-				8FE986E51CC7343C00D68339 /* AppDelegate.swift */,
 				8FE986E71CC7343C00D68339 /* ViewController.swift */,
-				8FE986E91CC7343C00D68339 /* Main.storyboard */,
+				8FE986FB1CC734B100D68339 /* CalculatorBrain.swift */,
+				8FE987001CC7360600D68339 /* PlotViewController.swift */,
+				8FE987011CC7360600D68339 /* LineChart.swift */,
+				8FE986FD1CC7350C00D68339 /* Main.storyboard */,
 				8FE986EC1CC7343C00D68339 /* Assets.xcassets */,
 				8FE986EE1CC7343C00D68339 /* LaunchScreen.storyboard */,
+				8FE986E51CC7343C00D68339 /* AppDelegate.swift */,
 				8FE986F11CC7343C00D68339 /* Info.plist */,
 			);
 			path = CalculatorPlot;
@@ -122,9 +131,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8FE986FF1CC7350C00D68339 /* Main.storyboard in Resources */,
 				8FE986F01CC7343C00D68339 /* LaunchScreen.storyboard in Resources */,
 				8FE986ED1CC7343C00D68339 /* Assets.xcassets in Resources */,
-				8FE986EB1CC7343C00D68339 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,27 +145,30 @@
 			buildActionMask = 2147483647;
 			files = (
 				8FE986E81CC7343C00D68339 /* ViewController.swift in Sources */,
+				8FE987021CC7360600D68339 /* PlotViewController.swift in Sources */,
+				8FE986FC1CC734B100D68339 /* CalculatorBrain.swift in Sources */,
 				8FE986E61CC7343C00D68339 /* AppDelegate.swift in Sources */,
+				8FE987031CC7360600D68339 /* LineChart.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		8FE986E91CC7343C00D68339 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				8FE986EA1CC7343C00D68339 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		8FE986EE1CC7343C00D68339 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				8FE986EF1CC7343C00D68339 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		8FE986FD1CC7350C00D68339 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8FE986FE1CC7350C00D68339 /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
