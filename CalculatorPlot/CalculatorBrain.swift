@@ -105,7 +105,7 @@ class CalculatorBrain {
             }
             else{
                 print(" ==== \(opStack)");
-                for index in 0...50 {
+                for index in 0...5 {
                     variableValues["M"] = Double(index);
                     print("before evaluation M = \(variableValues["M"])")
                     if let res = evaluate(){
@@ -113,6 +113,7 @@ class CalculatorBrain {
                         floatArr.append(CGFloat(resFloat));
                     }
                 }
+                variableValues["M"] = nil;
                 return floatArr
             }
         }
@@ -132,7 +133,6 @@ class CalculatorBrain {
         if let operation = knownOps[symbol] {
             opStack.append(operation)
         }
-        print(" :::: \(opStack)");
         return evaluate()
     }
     
